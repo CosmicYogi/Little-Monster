@@ -60,17 +60,6 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="yfs-kZ-uJW">
-                                <rect key="frame" x="52" y="124" width="253" height="98"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="CLI-lo-icK">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hearts" translatesAutoresizingMaskIntoConstraints="NO" id="X8n-hw-2cJ">
-                                        <rect key="frame" x="158" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="Tlj-ga-Im9">
                                 <rect key="frame" x="20" y="175" width="512" height="392"/>
                                 <constraints>
@@ -78,12 +67,44 @@
                                     <constraint firstAttribute="height" constant="392" id="lz1-Nc-q3N"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="yfs-kZ-uJW">
+                                <rect key="frame" x="161" y="123" width="243" height="98"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="CLI-lo-icK">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hearts" translatesAutoresizingMaskIntoConstraints="NO" id="X8n-hw-2cJ">
+                                        <rect key="frame" x="148" y="0.0" width="95" height="98"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="151" width="95" height="98"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="QuO-Rh-Jjs">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QuO-Rh-Jjs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="485" y="81" width="95" height="249"/>
+                                    <mask key="constraints">
+                                        <exclude reference="QuO-Rh-Jjs"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YNH-pV-Lww" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2lD-kz-zAp"/>
                             <constraint firstItem="Tlj-ga-Im9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Mq-0e-4NM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YNH-pV-Lww" secondAttribute="bottom" id="6hx-hV-2kN"/>
+                            <constraint firstItem="yfs-kZ-uJW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Uy-e7-zmC"/>
+                            <constraint firstItem="yfs-kZ-uJW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="Ana-94-WIu"/>
                             <constraint firstItem="yfs-kZ-uJW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DKh-GV-waL"/>
                             <constraint firstItem="YNH-pV-Lww" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EVT-lo-O8a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H2S-7c-cmI" secondAttribute="trailing" constant="-20" id="K75-v6-tRC"/>
@@ -97,6 +118,20 @@
                             <constraint firstItem="wbL-zU-Yg8" firstAttribute="centerY" secondItem="06v-Od-KQZ" secondAttribute="centerY" id="mcC-Og-n5D"/>
                             <constraint firstItem="yfs-kZ-uJW" firstAttribute="top" secondItem="06v-Od-KQZ" secondAttribute="bottom" constant="25" id="wv7-jY-qMK"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Uy-e7-zmC"/>
+                                <exclude reference="Ana-94-WIu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="8Uy-e7-zmC"/>
+                                <include reference="Ana-94-WIu"/>
+                                <exclude reference="DKh-GV-waL"/>
+                                <exclude reference="wv7-jY-qMK"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="monsterImageView" destination="Tlj-ga-Im9" id="oZU-T6-WX3"/>
