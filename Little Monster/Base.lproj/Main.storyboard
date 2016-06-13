@@ -37,21 +37,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="wbL-zU-Yg8">
                                 <rect key="frame" x="211" y="28" width="185" height="52"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="Pv3-sp-xyh">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skully" translatesAutoresizingMaskIntoConstraints="NO" id="Pv3-sp-xyh">
                                         <rect key="frame" x="0.0" y="0.0" width="53" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="53" id="OJr-nH-s2c"/>
                                             <constraint firstAttribute="height" constant="52" id="fng-o4-RIz"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="kBf-as-CiZ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skully" translatesAutoresizingMaskIntoConstraints="NO" id="kBf-as-CiZ">
                                         <rect key="frame" x="66" y="0.0" width="53" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="53" id="bH0-5H-U1O"/>
                                             <constraint firstAttribute="height" constant="52" id="tyR-5N-rb9"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="pfp-RK-ruq">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skully" translatesAutoresizingMaskIntoConstraints="NO" id="pfp-RK-ruq">
                                         <rect key="frame" x="132" y="0.0" width="53" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="53" id="2U9-8X-aqz"/>
@@ -114,6 +114,6 @@
         <image name="hearts" width="95" height="98"/>
         <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
-        <image name="skull" width="95" height="98"/>
+        <image name="skully" width="95" height="98"/>
     </resources>
 </document>
