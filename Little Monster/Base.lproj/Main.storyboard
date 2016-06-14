@@ -60,7 +60,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="Tlj-ga-Im9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="Tlj-ga-Im9" customClass="Monster" customModule="Little_Monster" customModuleProvider="target">
                                 <rect key="frame" x="20" y="175" width="512" height="392"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="512" id="QRe-i1-yHp"/>
@@ -134,7 +134,12 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="fooImage" destination="CLI-lo-icK" id="PVK-hK-lwA"/>
+                        <outlet property="heartImage" destination="X8n-hw-2cJ" id="KJa-sZ-7LL"/>
                         <outlet property="monsterImageView" destination="Tlj-ga-Im9" id="oZU-T6-WX3"/>
+                        <outlet property="panelty1" destination="Pv3-sp-xyh" id="Y2X-j2-vnH"/>
+                        <outlet property="panelty2" destination="kBf-as-CiZ" id="T0o-AB-AgK"/>
+                        <outlet property="panelty3" destination="pfp-RK-ruq" id="yi0-0H-NZk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 class DragImage: UIImageView {
+    var dropTarget : UIView!;
     
     var originalPosition : CGPoint!;
     required init?(coder aDecoder: NSCoder) {
@@ -25,9 +26,17 @@ class DragImage: UIImageView {
         if let touch = touches.first{
             let position = touch.locationInView(self.superview);
             self.center = CGPointMake(position.x, position.y);
+            
         }
     }
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.center = originalPosition;
+        if let touch = touches.first , let target = dropTarget
+            {
+                let position = touch.locationInView(self);
+                if CGRectContainsPoint(target.frame, position){
+                    NSNotificationCenter.defaultCenter().postNotificationName("onTargetDropped", object: nil);
+                }
+        }
     }
 }
