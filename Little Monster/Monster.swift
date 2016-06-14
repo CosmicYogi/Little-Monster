@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import UIKit //I always forget to import these things.
+import UIKit 
 class Monster: UIImageView {
     
     override init(frame: CGRect) {
